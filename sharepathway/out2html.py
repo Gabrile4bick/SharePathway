@@ -102,7 +102,7 @@ def out2html(*args, **kwargs):
 </ul>
 </h2>
 </div>
-""" %('hsa',pnum,snum,str(genelistscount),gnum, localtime))
+""" %(species,pnum,snum,str(genelistscount),gnum, localtime))
 
 
     outfile.write("""
