@@ -22,6 +22,7 @@ def out2html(*args, **kwargs):
     rr = kwargs.get('ratio',args[7])
     outfilename = kwargs.get('output', args[8])
     pwid2name = dict(kwargs.get('pwid2name', args[9]))
+    species = kwargs.get('species', args[10])
     snum = GenesMat.shape[1]
     pnum = pathwayMat.shape[1]
     gnum = GenesMat.shape[0]
@@ -102,7 +103,7 @@ def out2html(*args, **kwargs):
 </ul>
 </h2>
 </div>
-""" %('hsa',pnum,snum,str(genelistscount),gnum, localtime))
+""" %(species,pnum,snum,str(genelistscount),gnum, localtime))
 
 
     outfile.write("""
